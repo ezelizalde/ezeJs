@@ -1,14 +1,15 @@
-let deuda = 50000
-let cuotas = 12
-let cuotaMensual = calculoCuota(deuda, cuotas);
 
-function calculoCuota(deuda, cuotas){
-    if (cuotas, deuda <= 0) {
-        return "el numero debe ser mayor que 0"
+
+function calcularCuota() {
+    let deuda = parseInt(document.getElementById("inputDueda").value);
+    let cantidadCuotas = parseInt(document.getElementById("inputCuotas").value);
+
+    if (deuda <= 2 || cantidadCuotas <= 2) {
+        alert("Los valores de deuda y cantidad de cuotas deben ser mayores o iguales a 2");
     }
-
-    let cuotaMensual = deuda / cuotas
-        return cuotaMensual
-
+    else (deuda > 2 || cantidadCuotas > 2) {
+    let montoCuota = deuda / cantidadCuotas;
+    document.getElementById("montoCuota").value = montoCuota.toFixed(2);
+    console.log(`La cuota mensual es de ${montoCuota.toFixed(2)}`)
 }
-console.log(`La cuota mensual es de ${cuotaMensual.toFixed(2)}`)
+}
