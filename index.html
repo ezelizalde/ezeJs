@@ -3,21 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/estilo/estilo.css">
-    <title>Proyecto</title>
+    <title>CROWDFUNDING EN VACA MUERTA</title>
+    <link rel="stylesheet" href="./estilo/estilo.css">
 </head>
 <body>
-    <h1>PATAGONIA CROWDFUNDING</h1>
-    <div>
-        <input id="inputDeuda" type="text">
-        Deuda
-        <input id="inputCuotas" type="text">
-        Cantidad Cuotas
-        <button id="btnCalculo">Calcular</button>
-    </div>
+    <header>
+        <h1>CROWFUNDING EN VACA MUERTA</h1>
+        <p>Compra tokens para invertir en proyectos inmobiliarios con la mayor rentabilidad del país.</p>
+    </header>
 
+    <section id="proyectos">
+        <h2>Elegí tu proyecto</h2>
+        <div class="cards">
+            <div class="card" id="pro1">
+                <img src="./media/Proyecto1.jpg" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto 1.</p>
+                <span class="precio">1 Token</span>
+                <button data-id="1">Agregar al carrito</button>
+            </div>
+            <div class="card" id="pro2">
+                <img src="./media/Proyecto2.jpg" alt="Proyecto 2">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto 2.</p>
+                <span class="precio">1 Token</span>
+                <button data-id="2">Agregar al carrito</button>
+            </div>
+            <div class="card" id="pro3">
+                <img src="./media/Proyecto3.jpg" alt="Proyecto 3">
+                <h3>Proyecto 3</h3>
+                <p>Descripción breve del proyecto 3.</p>
+                <span class="precio">1 Token</span>
+                <button data-id="3">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
 
-
+    <section id="carrito">
+        <h2>Carrito de compra</h2>
+        <div class="carrito-vacio">
+            <p>Tu carrito está vacío.</p>
+        </div>
+        <ul class="carrito-items">
+            </ul>
+        <div class="total">
+            <span>Total:</span>
+            <span class="total-precio">0 Tokens</span>
+        </div>
+        <button id="btn-comprar">Comprar</button>
+    </section>
 
     <script src="./js/index.js"></script>
 </body>
